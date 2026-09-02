@@ -242,8 +242,8 @@
     .empty-state { display: none; padding: 42px; border-radius: 22px; text-align: center; background: rgba(255,255,255,.55); }
 
     .manager { padding: 112px 0; background: var(--paper); }
-    .manager-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 74px; align-items: center; }
-    .manager-copy h2 { margin: 0; font-family: var(--serif); font-size: clamp(48px, 5.5vw, 74px); font-weight: 300; line-height: .97; letter-spacing: -.04em; }
+    .manager-grid { display: grid; grid-template-columns: .82fr 1.18fr; gap: clamp(54px, 7vw, 90px); align-items: center; }
+    .manager-copy h2 { margin: 0; font-family: var(--serif); font-size: clamp(52px, 6vw, 80px); font-weight: 300; line-height: .93; letter-spacing: -.045em; text-wrap: balance; }
     .manager-copy > p { max-width: 540px; margin: 26px 0 34px; color: var(--ink-soft); font-size: 17px; line-height: 1.7; }
     .feature-list { display: grid; gap: 0; }
     .feature-row { display: grid; grid-template-columns: 42px 1fr; gap: 12px; padding: 20px 0; border-top: 1px solid var(--line); }
@@ -251,37 +251,51 @@
     .feature-number { color: #8aac9e; font-family: var(--serif); font-size: 20px; }
     .feature-row strong { display: block; margin-bottom: 5px; font-size: 14px; }
     .feature-row p { margin: 0; color: var(--ink-soft); font-size: 13px; line-height: 1.55; }
-    .workflow-card { position: relative; padding: 34px; border-radius: 32px; background: var(--rose); }
-    .workflow-head { display: flex; justify-content: space-between; gap: 24px; align-items: center; margin-bottom: 26px; }
-    .workflow-head h3 { margin: 0; font-family: var(--serif); font-size: 33px; font-weight: 400; }
-    .workflow-head span { padding: 8px 12px; border-radius: 999px; background: rgba(255,255,255,.62); font-size: 11px; font-weight: 700; }
-    .workflow-step { display: grid; grid-template-columns: 45px 1fr auto; gap: 14px; align-items: center; margin-top: 12px; padding: 16px; border: 1px solid rgba(255,255,255,.66); border-radius: 18px; background: rgba(255,255,255,.66); }
-    .step-avatar { width: 45px; height: 45px; display: grid; place-items: center; border-radius: 14px; color: white; background: var(--ink); font-size: 12px; font-weight: 700; }
-    .workflow-step:nth-child(3) .step-avatar { color: var(--ink); background: var(--sage-strong); }
-    .workflow-step:nth-child(4) .step-avatar { color: var(--ink); background: white; }
-    .workflow-step strong { display: block; font-size: 13px; }
-    .workflow-step small { color: var(--ink-soft); font-size: 11px; }
-    .step-status { color: #629a84; font-size: 11px; font-weight: 700; }
-    .workflow-quote { margin: 28px 4px 0; color: var(--ink); font-family: var(--serif); font-size: 27px; line-height: 1.2; }
+    .workflow-card { position: relative; overflow: hidden; padding: clamp(30px, 4vw, 46px); border-radius: 36px; background: linear-gradient(145deg, #f2e2dd, var(--rose)); box-shadow: 0 28px 70px rgba(73,57,51,.1); }
+    .workflow-card::after { content: ""; position: absolute; right: -92px; top: -108px; width: 240px; height: 240px; border: 36px solid rgba(255,255,255,.3); border-radius: 50%; pointer-events: none; }
+    .workflow-head { position: relative; z-index: 1; display: flex; justify-content: space-between; gap: 28px; align-items: start; margin-bottom: 30px; }
+    .workflow-head div > small { display: block; margin-bottom: 8px; color: #8d6f67; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+    .workflow-head h3 { max-width: 490px; margin: 0; font-family: var(--serif); font-size: clamp(32px, 3.3vw, 43px); font-weight: 400; line-height: 1.02; letter-spacing: -.025em; }
+    .workflow-head > span { flex: none; padding: 8px 12px; border-radius: 999px; background: rgba(255,255,255,.62); font-size: 11px; font-weight: 700; }
+    .workflow-story { position: relative; padding: 4px 0; }
+    .workflow-story::before { content: ""; position: absolute; top: 30px; bottom: 30px; left: 20px; width: 2px; background: linear-gradient(var(--rose-strong), #78b39b); }
+    .workflow-step { position: relative; z-index: 1; display: grid; grid-template-columns: 42px 1fr auto; gap: 16px; align-items: center; padding: 15px 0; }
+    .workflow-step + .workflow-step { border-top: 1px solid rgba(35,75,70,.09); }
+    .step-marker { width: 42px; height: 42px; display: grid; place-items: center; border: 5px solid rgba(242,226,221,.95); border-radius: 50%; color: white; background: var(--ink); font-size: 12px; font-weight: 700; box-shadow: 0 0 0 1px rgba(35,75,70,.09); }
+    .workflow-step:last-child .step-marker { color: var(--ink); background: var(--mint); }
+    .workflow-step strong { display: block; margin-bottom: 3px; font-size: 14px; }
+    .workflow-step small { color: var(--ink-soft); font-size: 12px; line-height: 1.45; }
+    .step-status { color: #4d8b73; font-size: 11px; font-weight: 700; }
+    .workflow-quote { margin: 28px 0 0 58px; padding-top: 24px; border-top: 1px solid rgba(35,75,70,.12); color: var(--ink); font-family: var(--serif); font-size: clamp(25px, 2.5vw, 33px); line-height: 1.15; }
 
     .time-benefit { padding: 0 0 112px; background: var(--paper); }
-    .time-benefit-card { display: grid; grid-template-columns: .78fr 1.22fr; gap: clamp(42px, 7vw, 88px); align-items: center; padding: clamp(34px, 5vw, 64px); border-radius: 34px; background: #f0e4df; }
-    .time-benefit-copy h2 { margin: 0; font-family: var(--serif); font-size: clamp(43px, 4.7vw, 64px); font-weight: 300; line-height: .98; letter-spacing: -.035em; }
+    .time-benefit-card { display: grid; grid-template-columns: .72fr 1.28fr; gap: clamp(44px, 7vw, 92px); align-items: center; padding: clamp(38px, 5.5vw, 70px); border-radius: 38px; background: #f0e4df; }
+    .time-benefit-copy h2 { margin: 0; font-family: var(--serif); font-size: clamp(48px, 5.4vw, 72px); font-weight: 300; line-height: .92; letter-spacing: -.045em; text-wrap: balance; }
     .time-benefit-copy > p { margin: 24px 0 0; color: var(--ink-soft); font-size: 15px; line-height: 1.7; }
-    .time-comparison { padding: clamp(24px, 3vw, 36px); border: 1px solid rgba(255,255,255,.72); border-radius: 27px; background: rgba(255,253,251,.68); }
-    .time-row + .time-row { margin-top: 25px; }
+    .time-comparison { padding: clamp(24px, 3vw, 38px); border: 1px solid rgba(255,255,255,.78); border-radius: 29px; background: rgba(255,253,251,.72); box-shadow: 0 20px 55px rgba(73,57,51,.07); }
+    .time-saving { margin-bottom: 30px; padding-bottom: 26px; border-bottom: 1px solid var(--line); }
+    .time-saving small { display: block; margin-bottom: 5px; color: #56806f; font-size: 11px; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }
+    .time-saving strong { display: block; font-family: var(--serif); font-size: clamp(43px, 5vw, 66px); font-weight: 400; line-height: .94; letter-spacing: -.04em; }
+    .time-saving span { display: block; margin-top: 8px; color: var(--ink-soft); font-size: 13px; }
+    .time-compare-grid { display: grid; grid-template-columns: 1fr 58px 1fr; gap: 13px; align-items: center; }
+    .time-row { min-height: 148px; padding: 18px; border-radius: 20px; }
+    .time-row-today { background: rgba(212,162,147,.13); }
+    .time-row-sanoom { background: rgba(114,173,150,.14); }
     .time-label { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; margin-bottom: 10px; }
     .time-label span { font-size: 13px; font-weight: 700; }
-    .time-label strong { font-family: var(--serif); font-size: 31px; font-weight: 500; }
+    .time-label strong { font-family: var(--serif); font-size: clamp(30px, 3vw, 39px); font-weight: 500; }
     .time-track { height: 12px; overflow: hidden; border-radius: 999px; background: rgba(35,75,70,.1); }
     .time-track span { display: block; height: 100%; border-radius: inherit; }
     .time-row-today .time-track span { width: 100%; background: #d4a293; }
     .time-row-sanoom .time-track span { width: 50%; background: #72ad96; }
-    .time-row small { display: block; margin-top: 8px; color: var(--ink-soft); font-size: 11px; }
-    .time-outcomes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 30px; }
-    .time-outcomes div { min-height: 105px; padding: 15px; border-radius: 16px; background: rgba(255,255,255,.58); }
-    .time-outcomes strong { display: block; margin-bottom: 7px; font-family: var(--serif); font-size: 21px; font-weight: 500; line-height: 1.05; }
-    .time-outcomes span { color: var(--ink-soft); font-size: 10px; line-height: 1.45; }
+    .time-row small { display: block; margin-top: 10px; color: var(--ink-soft); font-size: 11px; line-height: 1.4; }
+    .time-shift { display: grid; place-items: center; gap: 4px; color: #56806f; }
+    .time-shift span { font-family: var(--serif); font-size: 34px; line-height: 1; }
+    .time-shift small { font-size: 10px; font-weight: 700; }
+    .time-outcomes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 18px; }
+    .time-outcomes div { min-height: 90px; padding: 17px; border-radius: 16px; background: rgba(255,255,255,.58); }
+    .time-outcomes strong { display: block; margin-bottom: 7px; font-family: var(--serif); font-size: 24px; font-weight: 500; line-height: 1.05; }
+    .time-outcomes span { color: var(--ink-soft); font-size: 11px; line-height: 1.45; }
     .time-note { margin: 18px 0 0; color: var(--ink-soft); font-size: 10px; line-height: 1.5; }
 
     .modules { padding: 92px 0 96px; overflow: hidden; background: #28534d; color: #f6f1ed; }
@@ -432,8 +446,16 @@
       .workflow-head { display: grid; gap: 10px; }
       .workflow-step { grid-template-columns: 40px 1fr; }
       .step-status { grid-column: 2; }
+      .workflow-story::before { left: 19px; }
+      .step-marker { width: 40px; height: 40px; }
+      .workflow-quote { margin-left: 0; font-size: 27px; }
       .time-benefit { padding-bottom: 76px; }
       .time-benefit-card { padding: 30px 20px; border-radius: 26px; }
+      .time-saving strong { font-size: clamp(43px, 13vw, 58px); }
+      .time-compare-grid { grid-template-columns: 1fr; }
+      .time-shift { gap: 0; padding: 2px 0; }
+      .time-shift span { transform: rotate(90deg); }
+      .time-row { min-height: 0; }
       .time-outcomes { grid-template-columns: 1fr; }
       .time-outcomes div { min-height: 0; }
       .modules { padding: 64px 0; }
