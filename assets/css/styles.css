@@ -263,6 +263,26 @@
     .step-status { color: #629a84; font-size: 11px; font-weight: 700; }
     .workflow-quote { margin: 28px 4px 0; color: var(--ink); font-family: var(--serif); font-size: 27px; line-height: 1.2; }
 
+    .time-benefit { padding: 0 0 112px; background: var(--paper); }
+    .time-benefit-card { display: grid; grid-template-columns: .78fr 1.22fr; gap: clamp(42px, 7vw, 88px); align-items: center; padding: clamp(34px, 5vw, 64px); border-radius: 34px; background: #f0e4df; }
+    .time-benefit-copy h2 { margin: 0; font-family: var(--serif); font-size: clamp(43px, 4.7vw, 64px); font-weight: 300; line-height: .98; letter-spacing: -.035em; }
+    .time-benefit-copy > p { margin: 24px 0 0; color: var(--ink-soft); font-size: 15px; line-height: 1.7; }
+    .time-comparison { padding: clamp(24px, 3vw, 36px); border: 1px solid rgba(255,255,255,.72); border-radius: 27px; background: rgba(255,253,251,.68); }
+    .time-row + .time-row { margin-top: 25px; }
+    .time-label { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; margin-bottom: 10px; }
+    .time-label span { font-size: 13px; font-weight: 700; }
+    .time-label strong { font-family: var(--serif); font-size: 31px; font-weight: 500; }
+    .time-track { height: 12px; overflow: hidden; border-radius: 999px; background: rgba(35,75,70,.1); }
+    .time-track span { display: block; height: 100%; border-radius: inherit; }
+    .time-row-today .time-track span { width: 100%; background: #d4a293; }
+    .time-row-sanoom .time-track span { width: 50%; background: #72ad96; }
+    .time-row small { display: block; margin-top: 8px; color: var(--ink-soft); font-size: 11px; }
+    .time-outcomes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 30px; }
+    .time-outcomes div { min-height: 105px; padding: 15px; border-radius: 16px; background: rgba(255,255,255,.58); }
+    .time-outcomes strong { display: block; margin-bottom: 7px; font-family: var(--serif); font-size: 21px; font-weight: 500; line-height: 1.05; }
+    .time-outcomes span { color: var(--ink-soft); font-size: 10px; line-height: 1.45; }
+    .time-note { margin: 18px 0 0; color: var(--ink-soft); font-size: 10px; line-height: 1.5; }
+
     .modules { padding: 78px 0 84px; overflow: hidden; background: #28534d; color: #f6f1ed; }
     .modules .eyebrow { margin-bottom: 14px; color: #bfe1d4; }
     .modules-heading { display: grid; grid-template-columns: 1.1fr .9fr; gap: 64px; align-items: end; margin-bottom: 36px; }
@@ -277,7 +297,6 @@
       color: var(--ink);
       background: linear-gradient(145deg, #f8faf8 0%, #deeee7 100%);
       box-shadow: 0 24px 55px rgba(8,34,31,.18);
-    }
     .platform-cockpit::after { content: ""; position: absolute; width: 180px; height: 180px; right: -70px; top: -82px; border: 30px solid rgba(155,214,190,.28); border-radius: 50%; }
     .cockpit-top { position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-bottom: 24px; }
     .cockpit-top strong { font-family: var(--serif); font-size: 25px; font-weight: 500; }
@@ -353,7 +372,7 @@
     @media (max-width: 980px) {
       .main-nav { display: none; }
       .login { display: none; }
-      .hero-grid, .survey-card, .manager-grid, .contact-card { grid-template-columns: 1fr; }
+      .hero-grid, .survey-card, .manager-grid, .time-benefit-card, .contact-card { grid-template-columns: 1fr; }
       .survey-card { width: min(100% - 32px, 1180px); }
       .hero-copy { max-width: 760px; }
       .hero-visual { min-height: 620px; }
@@ -407,6 +426,10 @@
       .workflow-head { display: grid; gap: 10px; }
       .workflow-step { grid-template-columns: 40px 1fr; }
       .step-status { grid-column: 2; }
+      .time-benefit { padding-bottom: 76px; }
+      .time-benefit-card { padding: 30px 20px; border-radius: 26px; }
+      .time-outcomes { grid-template-columns: 1fr; }
+      .time-outcomes div { min-height: 0; }
       .modules { padding: 64px 0; }
       .modules-heading { margin-bottom: 28px; }
       .platform-cockpit { padding: 20px; }
