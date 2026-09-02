@@ -95,7 +95,7 @@
           <h2 id="survey-title">Wie gut sind Praxen und MVZ auf Hybrid-DRG vorbereitet?</h2>
           <p>Teilen Sie Ihre Erfahrungen zu Ambulantisierung, Materialversorgung und Beschaffung. Die Umfrage gehört zum hDRG-Kompass und wird erst nach Ihrer bewussten Auswahl geladen.</p>
           <div class="cta-row">
-            <button class="button button-primary" id="loadSurvey" type="button">Umfrage hier starten <span aria-hidden="true">→</span></button>
+            <button class="button button-primary" id="loadSurvey" data-load-survey type="button">Umfrage hier starten <span aria-hidden="true">→</span></button>
             <a class="button button-secondary" href="https://www.hdrg-kompass.de/" target="_blank" rel="noopener noreferrer">Zum hDRG-Kompass ↗</a>
           </div>
         </div>
@@ -103,6 +103,7 @@
           <span class="survey-number">4</span>
           <strong>Minuten, die helfen</strong>
           <p>Ihre Antworten fließen in die Weiterentwicklung praxisnaher Lösungen ein.</p>
+          <button class="button button-primary survey-frame-cta" data-load-survey type="button">Jetzt teilnehmen <span aria-hidden="true">→</span></button>
         </div>
       </div>
     </section>
@@ -209,8 +210,9 @@
     <section class="modules" id="plattform" aria-labelledby="modules-title">
       <div class="shell">
         <div class="modules-heading">
-          <div><div class="eyebrow">Sanoom im Alltag</div><h2 id="modules-title">Bestände im Blick zu behalten, kann so einfach sein.</h2></div>
-          <p>Diese Funktionen sind geplant: Bestände, Freigaben, Lieferungen und Nachweise sollen an einem Ort zusammenlaufen.</p>
+          <div class="eyebrow">Sanoom im Alltag</div>
+          <h2 id="modules-title">Bestände im Blick zu behalten, kann so einfach sein.</h2>
+          <p>Bestände, Freigaben, Lieferungen, Rechnungen und Aufgaben laufen künftig in einer gemeinsamen Praxisübersicht zusammen.</p>
         </div>
         <div class="modules-overview">
           <div class="platform-cockpit" aria-label="Beispiel der Sanoom Praxisübersicht">
@@ -225,6 +227,11 @@
               <div class="cockpit-tile"><span>Nächste Lieferung</span><strong>Nach Freigabe</strong></div>
             </div>
             <div class="cockpit-document"><span class="cockpit-check" aria-hidden="true">✓</span><span>Kein Raum unter Minimalbestand</span></div>
+            <div class="cockpit-rooms" aria-label="Beispiel geprüfter Praxisräume">
+              <div><span>OP 1</span><strong>Im Plan</strong></div>
+              <div><span>Eingriffsraum</span><strong>Im Plan</strong></div>
+              <div><span>Gastro 1</span><strong>Im Plan</strong></div>
+            </div>
           </div>
           <div class="module-list">
             <article class="module-card"><small>01</small><div><h3>Meine Praxis</h3><p>Bestände und offene Aufgaben sofort sehen.</p></div></article>
