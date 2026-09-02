@@ -373,6 +373,12 @@
     .contact-copy p { max-width: 520px; margin: 25px 0 0; color: var(--ink-soft); font-size: 16px; line-height: 1.7; }
     .contact-form { display: grid; gap: 13px; align-content: center; }
     .contact-action { padding: 28px; border-radius: 24px; background: #f2f7f4; }
+    .pilot-benefits { display: grid; gap: 4px; margin-bottom: 12px; }
+    .pilot-benefits div { display: grid; grid-template-columns: 32px 1fr; column-gap: 12px; padding: 13px 0; border-bottom: 1px solid var(--line); }
+    .pilot-benefits div > span { grid-row: 1 / span 2; width: 32px; height: 32px; display: grid; place-items: center; border-radius: 50%; color: var(--ink); background: var(--sage-strong); font-size: 13px; font-weight: 800; }
+    .pilot-benefits strong { align-self: end; font-size: 14px; }
+    .pilot-benefits small { color: var(--ink-soft); font-size: 11px; line-height: 1.45; }
+    .contact-action .button { width: 100%; }
     .field { display: grid; gap: 7px; }
     .field label { margin-left: 4px; color: var(--ink-soft); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
     .field input { width: 100%; min-height: 49px; padding: 0 16px; border: 1px solid var(--line); border-radius: 14px; outline: 0; color: var(--ink); background: #f8f5f2; }
@@ -442,6 +448,7 @@
       .brand-logo-mark { width: 31px; height: 31px; }
       .brand-logo-wordmark { width: 98px; }
       .cart-button { min-height: 39px; padding: 0 13px; }
+      .header-actions .cart-button { padding-inline: 11px; font-size: 12px; }
       .cart-button .cart-label { display: none; }
       .hero { padding: 32px 0 64px; }
       .hero-grid { gap: 34px; }
