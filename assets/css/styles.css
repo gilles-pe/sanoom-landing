@@ -306,8 +306,6 @@
     .contact-copy p { max-width: 520px; margin: 25px 0 0; color: var(--ink-soft); font-size: 16px; line-height: 1.7; }
     .contact-form { display: grid; gap: 13px; align-content: center; }
     .contact-action { padding: 28px; border-radius: 24px; background: #f2f7f4; }
-    .contact-label { color: var(--ink-soft); font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
-    .contact-email { margin-bottom: 12px; color: var(--ink); font-family: var(--serif); font-size: clamp(28px, 3vw, 42px); text-decoration-thickness: 1px; text-underline-offset: 6px; }
     .field { display: grid; gap: 7px; }
     .field label { margin-left: 4px; color: var(--ink-soft); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
     .field input { width: 100%; min-height: 49px; padding: 0 16px; border: 1px solid var(--line); border-radius: 14px; outline: 0; color: var(--ink); background: #f8f5f2; }
