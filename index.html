@@ -3,160 +3,236 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sanoom kommt: Praxisbedarf und eingriffsspezifische Komplettsets für ambulante und Hybrid-DRG-Eingriffe.">
-  <meta name="theme-color" content="#f6f2ed">
-  <title>Sanoom kommt - Praxisbedarf für ambulante Eingriffe</title>
+  <meta name="description" content="Sanoom startet bald: Praxisbedarf und eingriffsspezifische Komplettsets für ambulante Eingriffe und Hybrid-DRG.">
+  <meta name="theme-color" content="#f5f1ed">
+  <title>Sanoom kommt – Praxisbedarf für ambulante Eingriffe</title>
   <link rel="stylesheet" href="assets/css/styles.css">
-  <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Zum Inhalt springen</a>
-
-  <aside class="survey-ribbon" aria-label="Hinweis zur hDRG-Umfrage">
-    <div class="shell ribbon-inner">
-      <p><strong>4-Minuten-Umfrage:</strong> Wie gut sind Praxen und MVZ auf Ambulantisierung und Hybrid-DRG vorbereitet?</p>
-      <a href="#umfrage">Jetzt teilnehmen <span aria-hidden="true">↓</span></a>
-    </div>
-  </aside>
-
   <header class="site-header">
-    <div class="shell nav-wrap">
+    <div class="nav-wrap">
       <a class="brand" href="#top" aria-label="Sanoom Startseite">
-        <img src="assets/img/sanoom-logo.webp" alt="Sanoom - Gesundheit und Innovation" width="1200" height="345">
+        <img class="brand-logo-mark" src="assets/img/brand-mark.png" alt="" aria-hidden="true">
+        <img class="brand-logo-wordmark" src="assets/img/brand-wordmark.png" alt="" aria-hidden="true">
       </a>
-      <nav class="main-nav" aria-label="Hauptnavigation">
-        <a href="#was-entsteht">Was entsteht</a>
-        <a href="#umfrage">Umfrage</a>
+      <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
+        <a href="#umfrage">hDRG-Umfrage</a>
+        <a href="#sortiment">Geplantes Sortiment</a>
+        <a href="#einkaufsmanager">Einkaufsmanager</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
-      <a class="button button-ghost header-button" href="https://www.hdrg-kompass.de/" target="_blank" rel="noopener noreferrer">hDRG-Kompass <span aria-hidden="true">↗</span></a>
+      <div class="header-actions">
+        <a class="login" href="https://www.hdrg-kompass.de/" target="_blank" rel="noopener noreferrer">hDRG-Kompass ↗</a>
+        <a class="cart-button" href="#kontakt">Vorab melden</a>
+      </div>
     </div>
   </header>
 
-  <main id="main">
-    <section class="hero" id="top">
+  <main id="top">
+    <section class="hero">
       <div class="shell hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow"><span></span>Sanoom startet bald</div>
-          <h1>Ambulante Eingriffe.<br><em>Material, das mitdenkt.</em></h1>
-          <p class="hero-lead">Sanoom entwickelt den digitalen Einkauf für niedergelassene Praxen und MVZ - mit Praxisbedarf und eingriffsspezifischen Komplettsets für Hybrid-DRG-Operationen.</p>
+          <div class="eyebrow">Sanoom startet bald</div>
+          <h1>Mehr Zeit für <em>Menschen.</em> Weniger für Bestellungen.</h1>
+          <p class="hero-lead">Sanoom entwickelt einen neuen Einkaufsmanager für Praxen und MVZ – mit Praxisbedarf, eingriffsspezifischen Komplettsets und klaren Abläufen für ambulante Eingriffe und Hybrid-DRG.</p>
           <div class="cta-row">
-            <a class="button button-primary" href="mailto:info@sanoom.de?subject=Vorabinformation%20zu%20Sanoom">Vorab informieren lassen <span aria-hidden="true">→</span></a>
-            <a class="button button-secondary" href="#umfrage">An Umfrage teilnehmen</a>
+            <a class="button button-primary" href="#kontakt">Zum Start informieren lassen <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="#umfrage">An hDRG-Umfrage teilnehmen</a>
           </div>
-          <p class="hero-note">Noch kein Shop - wir bauen gerade Sortiment, Partnernetz und Bestellprozess auf.</p>
+          <div class="hero-note" aria-label="Sanoom Vorteile">
+            <span>Für Einzelpraxen und MVZ</span>
+            <span>Fokus ambulante Eingriffe</span>
+          </div>
+          <div class="hero-search-card" aria-label="Beispiel einer Schnellsuche">
+            <label>Vorschau auf Sanoom</label>
+            <div class="search-line"><span aria-hidden="true">⌕</span><input tabindex="-1" value="Eingriff oder Bedarf suchen" readonly aria-label="Beispiel einer künftigen Suche"></div>
+            <div class="search-result">
+              <span class="result-icon" aria-hidden="true">✦</span>
+              <span><strong>Passendes Komplettset finden</strong><small>Material je Eingriff gebündelt und planbar</small></span>
+            </div>
+          </div>
         </div>
 
-        <div class="set-visual" aria-label="Sanoom verbindet Eingriff, Materialset und planbare Kosten">
-          <div class="set-orbit orbit-one"></div>
-          <div class="set-orbit orbit-two"></div>
-          <div class="set-card set-card-main">
-            <span class="set-kicker">Eingriffsspezifisches Set</span>
-            <strong>Ein Eingriff.<br>Ein vollständiges Set.</strong>
-            <p>Standardisiert, nachvollziehbar und mit planbaren Materialkosten pro Fall.</p>
+        <div class="hero-visual" aria-label="Ärztin in einer modernen Praxis">
+          <div class="hero-photo">
+            <img src="assets/img/hero-doctor.webp" alt="Deutsche Ärztin in einer hellen niedergelassenen Praxis" loading="eager">
           </div>
-          <div class="set-card set-card-small set-card-top">
-            <span>01</span>
-            <strong>Bedarf definiert</strong>
-          </div>
-          <div class="set-card set-card-small set-card-bottom">
-            <span>02</span>
-            <strong>Komplett geliefert</strong>
-          </div>
-          <div class="coming-stamp">COMING<br>SOON</div>
         </div>
       </div>
-    </section>
 
-    <section class="promise" id="was-entsteht" aria-labelledby="promise-title">
-      <div class="shell">
-        <div class="section-heading">
-          <div>
-            <div class="eyebrow"><span></span>Was entsteht</div>
-            <h2 id="promise-title">Nicht noch ein Handschuh-Shop.</h2>
-          </div>
-          <p>Sanoom soll den Materialprozess rund um ambulante Eingriffe vereinfachen - vom definierten Bedarf bis zur vollständigen Lieferung.</p>
+      <div class="shell hero-chat" aria-label="Beispiel für den Sanoom Teamchat">
+        <div class="chat-intro">
+          <small>Im Team abgestimmt</small>
+          <h2>Eine Nachricht. Der Rest läuft.</h2>
+          <p>So soll Sanoom kurze Absprachen künftig direkt mit Bestellung und Freigabe verbinden.</p>
         </div>
-        <div class="promise-grid">
-          <article>
-            <span class="number">01</span>
-            <h3>Sets je Eingriff</h3>
-            <p>Die benötigten Verbrauchsmaterialien werden zu einem standardisierten, praxistauglichen Set gebündelt.</p>
-          </article>
-          <article>
-            <span class="number">02</span>
-            <h3>Planbare Fallkosten</h3>
-            <p>Materialkosten werden je Eingriff transparent und besser kalkulierbar - statt über viele Einzelpositionen.</p>
-          </article>
-          <article>
-            <span class="number">03</span>
-            <h3>Einfachere Beschaffung</h3>
-            <p>Weniger Lieferanten, Suchaufwand und Fehlteile. Mehr Fokus auf den Aufbau des ambulanten Geschäfts.</p>
-          </article>
+        <div class="chat-thread">
+          <div class="chat-message">
+            <span class="chat-avatar" aria-hidden="true">SK</span>
+            <div class="chat-bubble">
+              <span class="chat-name">Sandra, MFA</span>
+              <p>Die Kanülen gehen zur Neige – kannst du das übernehmen?</p>
+            </div>
+          </div>
+          <div class="chat-message reply">
+            <div class="chat-bubble">
+              <span class="chat-name">Sanoom</span>
+              <p>Bedarf erfasst. Die Freigabe kann gesammelt vorbereitet und die Bestellung nachvollziehbar ausgelöst werden.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="survey" id="umfrage" aria-labelledby="survey-title">
-      <div class="shell survey-shell">
-        <div class="survey-intro">
-          <div class="eyebrow light"><span></span>hDRG-Kompass Studie</div>
-          <h2 id="survey-title">Wo stehen Praxen bei Ambulantisierung und Beschaffung?</h2>
-          <p>Die anonyme Umfrage untersucht die Vorbereitung auf Hybrid-DRG und heutige Bestellprozesse. Sie dauert rund vier Minuten. Pro vollständiger Teilnahme werden 5 € an das Kinderhospiz Sternenbrücke in Hamburg gespendet.</p>
-          <ul>
-            <li>Anonyme Auswertung</li>
-            <li>Benchmark-Report auf Wunsch</li>
-            <li>Für Praxen und MVZ</li>
-          </ul>
-          <a class="button button-light" href="https://www.hdrg-kompass.de/" target="_blank" rel="noopener noreferrer">Zum hDRG-Kompass <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="survey-embed" id="surveyEmbed">
-          <div class="survey-consent" id="surveyConsent">
-            <span class="survey-consent-label">Externer Inhalt</span>
-            <h3>Umfrage direkt hier starten</h3>
-            <p>Mit dem Laden wird eine Verbindung zu Typeform hergestellt. Dabei können insbesondere Ihre IP-Adresse und technische Browserdaten an Typeform übermittelt werden.</p>
-            <button class="button button-primary" id="loadSurvey" type="button">Typeform-Umfrage laden <span aria-hidden="true">→</span></button>
-            <a href="https://form.typeform.com/to/WTmiFoUU" target="_blank" rel="noopener noreferrer">Alternativ in neuem Fenster öffnen</a>
+      <div class="shell survey-card">
+        <div class="survey-copy">
+          <div class="eyebrow">4-Minuten-Umfrage</div>
+          <h2 id="survey-title">Wie gut sind Praxen und MVZ auf Hybrid-DRG vorbereitet?</h2>
+          <p>Teilen Sie Ihre Erfahrungen zu Ambulantisierung, Materialversorgung und Beschaffung. Die Umfrage gehört zum hDRG-Kompass und wird erst nach Ihrer bewussten Auswahl geladen.</p>
+          <div class="cta-row">
+            <button class="button button-primary" id="loadSurvey" type="button">Umfrage hier starten <span aria-hidden="true">→</span></button>
+            <a class="button button-secondary" href="https://www.hdrg-kompass.de/" target="_blank" rel="noopener noreferrer">Zum hDRG-Kompass ↗</a>
           </div>
-          <iframe
-            id="surveyFrame"
-            title="Umfrage zu Ambulantisierung und Bestellprozessen"
-            data-src="https://form.typeform.com/to/WTmiFoUU?typeform-medium=embed-snippet"
-            loading="lazy"
-            allow="camera; microphone; autoplay; encrypted-media"
-            hidden
-          ></iframe>
-          <noscript><a href="https://form.typeform.com/to/WTmiFoUU" target="_blank" rel="noopener noreferrer">Umfrage in einem neuen Fenster öffnen</a></noscript>
+        </div>
+        <div class="survey-frame" id="surveyFrame">
+          <span class="survey-number">4</span>
+          <strong>Minuten, die helfen</strong>
+          <p>Ihre Antworten fließen in die Weiterentwicklung praxisnaher Lösungen ein.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof" aria-label="Sanoom Schwerpunkte">
+      <div class="shell proof-grid">
+        <div class="proof-item"><div class="proof-value">Bald</div><p>Sanoom befindet sich im Aufbau. Interessierte Praxen können sich schon jetzt melden.</p></div>
+        <div class="proof-item"><div class="proof-value">Sets</div><p>Eingriffsspezifische Komplettsets mit planbaren Materialkosten pro Fall.</p></div>
+        <div class="proof-item"><div class="proof-value">1 Ort</div><p>Bedarf, Freigaben und Nachweise sollen künftig übersichtlich zusammenlaufen.</p></div>
+      </div>
+    </section>
+
+    <section class="shop" id="sortiment" aria-labelledby="shop-title">
+      <div class="shell">
+        <div class="shop-top">
+          <div><div class="eyebrow">Geplantes Sortiment</div><h2 id="shop-title">Vom Einzelartikel bis zum kompletten Eingriffsset.</h2></div>
+          <p>Diese Vorschau zeigt die Richtung: täglicher Praxisbedarf, Instrumente sowie standardisierte Komplettsets für ambulante Eingriffe. Sortiment, Preise und Verfügbarkeit stehen noch nicht fest.</p>
+        </div>
+        <label class="product-search" for="productSearch">
+          <span aria-hidden="true">⌕</span>
+          <input id="productSearch" type="search" placeholder="Spritzen, Verbandmaterial, Hygiene oder HF-Pinzette …" autocomplete="off">
+          <span class="pzn-badge" id="searchHint">6 Beispiele</span>
+        </label>
+        <div class="product-grid" id="productGrid">
+          <article class="product-card" data-search="einmalspritzen luer lock spritzen kanülen 5 ml steril sprechstundenbedarf">
+            <div class="product-image"><img src="assets/img/product-syringes.webp" alt="Sterile Einmalspritzen und einzeln verpackte Kanülen" loading="lazy"></div>
+            <div class="product-body"><div class="product-kicker">Sprechstundenbedarf</div><h3>Einmalspritzen Luer-Lock · 5 ml</h3><div class="product-meta">Steril · Beispielartikel</div><div class="product-price">Zum Start <small>geplant</small></div><a class="add-button" href="#kontakt">Interesse vormerken</a></div>
+          </article>
+          <article class="product-card" data-search="verbandmaterial basis paket kompressen binden pflaster fixation verband schere">
+            <div class="product-image"><img src="assets/img/product-bandages.webp" alt="Kompressen, Fixierbinden, Pflaster und Verbandsschere" loading="lazy"></div>
+            <div class="product-body"><div class="product-kicker">Verbandmaterial</div><h3>Verbandmaterial Basis-Paket</h3><div class="product-meta">Kompressen, Binden &amp; Fixierung · Beispielpaket</div><div class="product-price">Zum Start <small>geplant</small></div><a class="add-button" href="#kontakt">Interesse vormerken</a></div>
+          </article>
+          <article class="product-card" data-search="händedesinfektion hygiene sterillium dosierpumpe 1 liter tücher">
+            <div class="product-image"><img src="assets/img/product-disinfectant.webp" alt="Händedesinfektion mit Dosierpumpe und Einmaltüchern" loading="lazy"></div>
+            <div class="product-body"><div class="product-kicker">Händehygiene</div><h3>Händedesinfektion + Dosierpumpe · 1 l</h3><div class="product-meta">Für Behandlungs- und Funktionsräume</div><div class="product-price">Zum Start <small>geplant</small></div><a class="add-button" href="#kontakt">Interesse vormerken</a></div>
+          </article>
+          <article class="product-card" data-search="bipolare hf pinzette hochfrequenz pinzetten instrument eingriff 18 cm">
+            <div class="product-image"><img src="assets/img/product-forceps.webp" alt="Bipolare HF-Pinzette mit Anschlusskabel auf einer Instrumentenschale" loading="lazy"></div>
+            <div class="product-body"><div class="product-kicker">HF-Instrumente</div><h3>Bipolare HF-Pinzette · 18 cm</h3><div class="product-meta">Wiederverwendbar · Beispielinstrument</div><div class="product-price">Zum Start <small>geplant</small></div><a class="add-button" href="#kontakt">Interesse vormerken</a></div>
+          </article>
+          <article class="product-card set-card" data-search="hygiene set hygienepaket sprechstunde vorbereitungsset handschuhe tupfer unterlage">
+            <div class="product-image"><span class="product-flag">Sanoom Set</span><img src="assets/img/product-hygiene-set.webp" alt="Vollständig vorbereitetes Hygieneset für die Sprechstunde" loading="lazy"></div>
+            <div class="product-body"><div class="product-kicker">Optimiertes Hygieneset</div><h3>Hygiene-Set Sprechstunde</h3><div class="product-meta">Bedarfsgerecht gepackt · Konzeptbeispiel</div><div class="product-price">Zum Start <small>geplant</small></div><a class="add-button" href="#kontakt">Interesse vormerken</a></div>
+          </article>
+          <article class="product-card set-card" data-search="eingriffsset kleinchirurgie eingriff set instrumente pinzette schere nadelhalter kompressen lochtuch">
+            <div class="product-image"><span class="product-flag">Sanoom Set</span><img src="assets/img/product-procedure-set.webp" alt="Vorbereitetes Eingriffsset mit Instrumenten, Kompressen und Lochtuch" loading="lazy"></div>
+            <div class="product-body"><div class="product-kicker">Optimiertes Eingriffsset</div><h3>Eingriffsset Kleinchirurgie</h3><div class="product-meta">Eingriffsspezifisch · Konzeptbeispiel</div><div class="product-price">Zum Start <small>geplant</small></div><a class="add-button" href="#kontakt">Interesse vormerken</a></div>
+          </article>
+        </div>
+        <div class="empty-state" id="emptyState"><strong>Kein passender Artikel gefunden.</strong><br><span class="muted">Versuchen Sie einen Produktnamen, eine Kategorie oder eine Artikelnummer.</span></div>
+      </div>
+    </section>
+
+    <section class="manager" id="einkaufsmanager" aria-labelledby="manager-title">
+      <div class="shell manager-grid">
+        <div class="manager-copy">
+          <div class="eyebrow">Der digitale Einkaufsmanager</div>
+          <h2 id="manager-title">Vom Bestellstress zur bestätigten Lieferung.</h2>
+          <p>Geplant ist ein Ablauf, den jede Person im Team sofort versteht: Bedarf erfassen, ärztlich freigeben und Status, Budget sowie Dokumente zusammenhalten.</p>
+          <div class="feature-list">
+            <div class="feature-row"><span class="feature-number">01</span><div><strong>Schnellbestellung</strong><p>Artikel suchen, Bestellliste hochladen oder Barcode scannen.</p></div></div>
+            <div class="feature-row"><span class="feature-number">02</span><div><strong>Ärztliche Freigabe</strong><p>Einzeln oder gesammelt, auch mobil zwischen zwei Terminen.</p></div></div>
+            <div class="feature-row"><span class="feature-number">03</span><div><strong>Papierlose Nachweise</strong><p>Bestellung, Lieferschein und Rechnung bleiben nachvollziehbar verbunden.</p></div></div>
+          </div>
+        </div>
+        <div class="workflow-card" aria-label="Beispiel eines Bestellablaufs">
+          <div class="workflow-head"><h3>So könnte es laufen</h3><span>Produktvorschau</span></div>
+          <div class="workflow-step"><span class="step-avatar">SK</span><span><strong>Sandra erfasst den Bedarf</strong><small>Einzelartikel und Komplettsets</small></span><span class="step-status">Schritt 1</span></div>
+          <div class="workflow-step"><span class="step-avatar">DW</span><span><strong>Dr. Weber gibt gesammelt frei</strong><small>Freigabe am Smartphone</small></span><span class="step-status">Schritt 2</span></div>
+          <div class="workflow-step"><span class="step-avatar">S</span><span><strong>Sanoom bündelt die Bestellung</strong><small>Status und Dokumente bleiben verbunden</small></span><span class="step-status">Schritt 3</span></div>
+          <p class="workflow-quote">„Endlich weiß jede im Team, was schon bestellt ist.“</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="modules" id="plattform" aria-labelledby="modules-title">
+      <div class="shell">
+        <div class="modules-heading">
+          <div><div class="eyebrow">Sanoom im Alltag</div><h2 id="modules-title">Alles im Blick. Nichts mehr im Kopf behalten.</h2></div>
+          <p>Diese Funktionen sind geplant: Bestände, Freigaben, Lieferungen und Nachweise sollen an einem Ort zusammenlaufen.</p>
+        </div>
+        <div class="modules-overview">
+          <div class="platform-cockpit" aria-label="Beispiel der Sanoom Praxisübersicht">
+            <div class="cockpit-top"><strong>Meine Praxis</strong><span>Heute</span></div>
+            <div class="cockpit-status">
+              <small>Materialversorgung</small>
+              <strong>Alles im grünen Bereich.</strong>
+              <div class="supply-bar" aria-label="Versorgung im Plan"><span></span></div>
+            </div>
+            <div class="cockpit-grid">
+              <div class="cockpit-tile"><span>Offene Freigaben</span><strong>1 Bestellung</strong></div>
+              <div class="cockpit-tile"><span>Nächste Lieferung</span><strong>Nach Freigabe</strong></div>
+            </div>
+            <div class="cockpit-document"><span class="cockpit-check" aria-hidden="true">✓</span><span>MDR-Nachweise vollständig und aktuell</span></div>
+          </div>
+          <div class="module-list">
+            <article class="module-card"><small>01</small><div><h3>Meine Praxis</h3><p>Bestände und offene Aufgaben sofort sehen.</p></div></article>
+            <article class="module-card"><small>02</small><div><h3>Regelmäßige Lieferungen</h3><p>Einmal freigeben, jederzeit anpassen.</p></div></article>
+            <article class="module-card"><small>03</small><div><h3>Checklisten je Raum</h3><p>Räume systematisch und sicher prüfen.</p></div></article>
+            <article class="module-card"><small>04</small><div><h3>Budget &amp; Kostenstellen</h3><p>Ausgaben sauber zuordnen und verfolgen.</p></div></article>
+            <article class="module-card"><small>05</small><div><h3>Praxisteam &amp; Rollen</h3><p>Bestellung und Freigabe klar verteilen.</p></div></article>
+            <article class="module-card"><small>06</small><div><h3>MDR-Nachweise</h3><p>Dokumente automatisch zusammenhalten.</p></div></article>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="contact" id="kontakt" aria-labelledby="contact-title">
       <div class="shell contact-card">
-        <div>
-          <div class="eyebrow"><span></span>Früh dabei sein</div>
-          <h2 id="contact-title">Sie planen ambulante Eingriffe?</h2>
-          <p>Melden Sie sich vorab. Wir informieren über den Start und sprechen auf Wunsch über relevante Eingriffe, Sets und Beschaffungsprozesse Ihrer Praxis.</p>
+        <div class="contact-copy">
+          <div class="eyebrow">Zum Start informieren lassen</div>
+          <h2 id="contact-title">Möchten Sie Sanoom früh kennenlernen?</h2>
+          <p>Schreiben Sie uns kurz, ob Sie eine Einzelpraxis, größere Praxis oder ein MVZ vertreten. Wir melden uns, sobald es Neuigkeiten, Tests oder erste Zugangsmöglichkeiten gibt.</p>
         </div>
-        <a class="button button-primary" href="mailto:info@sanoom.de?subject=Interesse%20an%20Sanoom&body=Praxis%20%2F%20MVZ%3A%0AFachbereich%3A%0AInteressante%20Eingriffe%3A%0A">Interesse vormerken <span aria-hidden="true">→</span></a>
+        <div class="contact-form contact-action">
+          <span class="contact-label">Direkter Kontakt</span>
+          <a class="contact-email" href="mailto:info@sanoom.de?subject=Interesse%20an%20Sanoom">info@sanoom.de</a>
+          <a class="button button-primary" href="mailto:info@sanoom.de?subject=Interesse%20an%20Sanoom">Interesse vormerken <span aria-hidden="true">→</span></a>
+          <p class="form-note">Unverbindlich. Keine automatische Newsletter-Anmeldung.</p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="shell footer-row">
-      <div>
-        <img src="assets/img/sanoom-logo.webp" alt="Sanoom - Gesundheit und Innovation" width="1200" height="345">
-        <p>Praxisbedarf und Komplettsets für ambulante Eingriffe.</p>
-      </div>
+      <div><a class="brand footer-brand" href="#top" aria-label="Sanoom Startseite"><img class="footer-logo-full" src="assets/img/sanoom-logo-full.png" alt="Sanoom – Gesundheit und Innovation"></a><div class="footer-copy">Ihr Einkaufsmanager für den niedergelassenen Bereich.</div></div>
       <div class="footer-links">
-        <a href="https://www.hdrg-kompass.de/" target="_blank" rel="noopener noreferrer">hDRG-Kompass</a>
-        <a href="mailto:info@sanoom.de">Kontakt</a>
-        <a href="impressum.html">Impressum</a>
-        <a href="datenschutz.html">Datenschutz</a>
-        <span>© <span id="year">2026</span> Sanoom</span>
+        <a href="#einkaufsmanager">Einkaufsmanager</a><a href="#sortiment">Sortiment</a><a href="#kontakt">Kontakt</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a>
+        <span>© 2026 Sanoom</span>
       </div>
     </div>
   </footer>
+
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>

@@ -6,12 +6,14 @@ Statische Coming-soon-Seite mit normaler Datei- und Asset-Struktur.
 
 - `index.html` - Inhalt und Seitenstruktur
 - `assets/css/styles.css` - Layout, Farben und Responsive Design
-- `assets/js/main.js` - kleine Interaktionen
-- `assets/img/sanoom-logo.webp` - optimiertes Sanoom-Logo
+- `assets/js/main.js` - Produktsuche und Typeform-Einbettung
+- `assets/img/` - zehn Originalbilder aus dem Frontpage-Dummy
+- `assets/fonts/` - lokal eingebundene Schriften
 
 ## Inhalte
 
-- klarer Coming-soon-Status statt Shop-Simulation
+- Gestaltung und Bilder des ursprünglichen Frontpage-Dummys
+- klarer Coming-soon-Status statt aktiver Shop-Funktionen
 - Positionierung auf Praxisbedarf und eingriffsspezifische Hybrid-DRG-Sets
 - eingebettete Typeform-Umfrage von hDRG-Kompass
 - datenschutzfreundliche Click-to-load-Einbettung der Typeform-Umfrage

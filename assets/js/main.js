@@ -1,21 +1,31 @@
-document.getElementById("year").textContent = new Date().getFullYear();
+const search = document.getElementById('productSearch');
+const searchHint = document.getElementById('searchHint');
+const cards = [...document.querySelectorAll('.product-card')];
+const emptyState = document.getElementById('emptyState');
+const loadSurvey = document.getElementById('loadSurvey');
+const surveyFrame = document.getElementById('surveyFrame');
 
-const loadSurveyButton = document.getElementById("loadSurvey");
-const surveyFrame = document.getElementById("surveyFrame");
-const surveyConsent = document.getElementById("surveyConsent");
+search?.addEventListener('input', () => {
+  const query = search.value.toLocaleLowerCase('de').trim();
+  let visible = 0;
 
-if (loadSurveyButton && surveyFrame && surveyConsent) {
-  loadSurveyButton.addEventListener("click", () => {
-    surveyFrame.src = surveyFrame.dataset.src;
-    surveyFrame.hidden = false;
-    surveyConsent.hidden = true;
-    surveyFrame.focus();
+  cards.forEach(card => {
+    const match = card.dataset.search.includes(query);
+    card.hidden = !match;
+    if (match) visible += 1;
   });
-}
 
-document.querySelectorAll('a[href^="#"]').forEach((link) => {
-  link.addEventListener("click", () => {
-    const target = document.querySelector(link.getAttribute("href"));
-    if (target) target.setAttribute("tabindex", "-1");
-  });
+  emptyState.style.display = visible ? 'none' : 'block';
+  searchHint.textContent = `${visible} ${visible === 1 ? 'Treffer' : 'Treffer'}`;
+});
+
+loadSurvey?.addEventListener('click', () => {
+  const iframe = document.createElement('iframe');
+  iframe.src = 'https://form.typeform.com/to/WTmiFoUU?typeform-medium=embed-snippet';
+  iframe.title = 'hDRG-Umfrage von Sanoom';
+  iframe.allow = 'camera; microphone; autoplay; encrypted-media';
+  iframe.loading = 'eager';
+  surveyFrame.replaceChildren(iframe);
+  loadSurvey.disabled = true;
+  loadSurvey.textContent = 'Umfrage geladen';
 });
