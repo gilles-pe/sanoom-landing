@@ -204,7 +204,16 @@
     .proof-value { margin-bottom: 6px; font-family: var(--serif); font-size: 38px; font-weight: 400; }
     .proof-item p { margin: 0; color: var(--ink-soft); font-size: 13px; line-height: 1.55; }
 
-    .shop { padding: 110px 0; background: #edf5f1; }
+    .shop { padding: 42px 0 58px; background: #e5f1eb; }
+    .shop-details { border: 1px solid rgba(35,75,70,.13); border-radius: 28px; background: rgba(255,253,251,.72); box-shadow: 0 18px 48px rgba(43,70,66,.07); }
+    .shop-details summary { display: flex; justify-content: space-between; align-items: center; gap: 30px; min-height: 116px; padding: 28px clamp(24px, 4vw, 46px); cursor: pointer; list-style: none; }
+    .shop-details summary::-webkit-details-marker { display: none; }
+    .shop-details summary small { display: block; margin-bottom: 5px; color: var(--ink-soft); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .shop-details summary strong { font-family: var(--serif); font-size: clamp(30px, 3.6vw, 44px); font-weight: 400; line-height: 1; }
+    .shop-toggle { width: 48px; height: 48px; display: grid; place-items: center; flex: none; border-radius: 50%; color: white; background: var(--ink); font-size: 27px; font-weight: 300; transition: transform .25s ease; }
+    .shop-details[open] .shop-toggle { transform: rotate(45deg); }
+    .shop-content { padding: 12px clamp(24px, 4vw, 46px) 44px; border-top: 1px solid rgba(35,75,70,.1); }
+    .shop-content .shop-top { padding-top: 42px; }
     .shop-top { display: flex; justify-content: space-between; align-items: end; gap: 36px; margin-bottom: 38px; }
     .shop-top h2 { margin: 0; font-family: var(--serif); font-size: clamp(44px, 5vw, 68px); font-weight: 300; line-height: 1; letter-spacing: -.035em; }
     .shop-top p { max-width: 490px; margin: 0; color: var(--ink-soft); line-height: 1.6; }
@@ -457,6 +466,13 @@
       .survey-frame { min-height: 260px; padding: 24px 16px; }
       .survey-frame iframe { height: 720px; }
       .shop, .manager, .modules, .sets-showcase, .contact { padding: 76px 0; }
+      .shop.shop-collapsed { padding: 28px 0 40px; }
+      .shop-details { border-radius: 22px; }
+      .shop-details summary { min-height: 96px; padding: 22px 18px; }
+      .shop-details summary strong { font-size: 29px; }
+      .shop-toggle { width: 42px; height: 42px; font-size: 24px; }
+      .shop-content { padding: 8px 18px 28px; }
+      .shop-content .shop-top { padding-top: 30px; }
       .shop-top { display: grid; gap: 20px; }
       .product-search { grid-template-columns: auto 1fr; }
       .pzn-badge { display: none; }

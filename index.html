@@ -116,39 +116,6 @@
       </div>
     </section>
 
-    <section class="shop" id="sortiment" aria-labelledby="shop-title">
-      <div class="shell">
-        <div class="shop-top">
-          <div><div class="eyebrow">Geplantes Sortiment</div><h2 id="shop-title">Eingriffe vorzubereiten, kann so einfach sein.</h2></div>
-          <p>Diese Vorschau zeigt die Richtung: täglicher Praxisbedarf und Instrumente für ambulante Eingriffe. Sortiment, Preise und Verfügbarkeit stehen noch nicht fest.</p>
-        </div>
-        <label class="product-search" for="productSearch">
-          <span aria-hidden="true">⌕</span>
-          <input id="productSearch" type="search" placeholder="Spritzen, Verbandmaterial, Hygiene oder HF-Pinzette …" autocomplete="off">
-          <span class="pzn-badge" id="searchHint">4 Beispiele</span>
-        </label>
-        <div class="product-grid" id="productGrid">
-          <article class="product-card" data-search="einmalspritzen luer lock spritzen kanülen 5 ml steril sprechstundenbedarf">
-            <div class="product-image"><img src="assets/img/product-syringes.webp" alt="Sterile Einmalspritzen und einzeln verpackte Kanülen" loading="lazy"></div>
-            <div class="product-body"><div class="product-kicker">Sprechstundenbedarf</div><h3>Einmalspritzen Luer-Lock · 5 ml</h3><div class="product-meta">Steril · Beispielartikel</div><div class="product-price">Zum Start <small>geplant</small></div><a class="add-button" href="#kontakt">Interesse vormerken</a></div>
-          </article>
-          <article class="product-card" data-search="verbandmaterial basis paket kompressen binden pflaster fixation verband schere">
-            <div class="product-image"><img src="assets/img/product-bandages.webp" alt="Kompressen, Fixierbinden, Pflaster und Verbandsschere" loading="lazy"></div>
-            <div class="product-body"><div class="product-kicker">Verbandmaterial</div><h3>Verbandmaterial Basis-Paket</h3><div class="product-meta">Kompressen, Binden &amp; Fixierung · Beispielpaket</div><div class="product-price">Zum Start <small>geplant</small></div><a class="add-button" href="#kontakt">Interesse vormerken</a></div>
-          </article>
-          <article class="product-card" data-search="händedesinfektion hygiene sterillium dosierpumpe 1 liter tücher">
-            <div class="product-image"><img src="assets/img/product-disinfectant.webp" alt="Händedesinfektion mit Dosierpumpe und Einmaltüchern" loading="lazy"></div>
-            <div class="product-body"><div class="product-kicker">Händehygiene</div><h3>Händedesinfektion + Dosierpumpe · 1 l</h3><div class="product-meta">Für Behandlungs- und Funktionsräume</div><div class="product-price">Zum Start <small>geplant</small></div><a class="add-button" href="#kontakt">Interesse vormerken</a></div>
-          </article>
-          <article class="product-card" data-search="bipolare hf pinzette hochfrequenz pinzetten instrument eingriff 18 cm">
-            <div class="product-image"><img src="assets/img/product-forceps.webp" alt="Bipolare HF-Pinzette mit Anschlusskabel auf einer Instrumentenschale" loading="lazy"></div>
-            <div class="product-body"><div class="product-kicker">HF-Instrumente</div><h3>Bipolare HF-Pinzette · 18 cm</h3><div class="product-meta">Wiederverwendbar · Beispielinstrument</div><div class="product-price">Zum Start <small>geplant</small></div><a class="add-button" href="#kontakt">Interesse vormerken</a></div>
-          </article>
-        </div>
-        <div class="empty-state" id="emptyState"><strong>Kein passender Artikel gefunden.</strong><br><span class="muted">Versuchen Sie einen Produktnamen, eine Kategorie oder eine Artikelnummer.</span></div>
-      </div>
-    </section>
-
     <section class="manager" id="einkaufsmanager" aria-labelledby="manager-title">
       <div class="shell manager-grid">
         <div class="manager-copy">
@@ -286,6 +253,47 @@
           <a class="button button-primary" href="mailto:info@sanoom.de?subject=Interesse%20an%20Sanoom">Interesse vormerken <span aria-hidden="true">→</span></a>
           <p class="form-note">Unverbindlich. Keine automatische Newsletter-Anmeldung.</p>
         </div>
+      </div>
+    </section>
+
+    <section class="shop shop-collapsed" id="sortiment" aria-labelledby="shop-title">
+      <div class="shell">
+        <details class="shop-details">
+          <summary>
+            <span><small>Vorschau</small><strong id="shop-title">Geplantes Sortiment ansehen</strong></span>
+            <span class="shop-toggle" aria-hidden="true">+</span>
+          </summary>
+          <div class="shop-content">
+            <div class="shop-top">
+              <div><div class="eyebrow">Geplantes Sortiment</div><h2>Eingriffe vorzubereiten, kann so einfach sein.</h2></div>
+              <p>Diese Vorschau zeigt die Richtung: täglicher Praxisbedarf und Instrumente für ambulante Eingriffe. Sortiment, Preise und Verfügbarkeit stehen noch nicht fest.</p>
+            </div>
+            <label class="product-search" for="productSearch">
+              <span aria-hidden="true">⌕</span>
+              <input id="productSearch" type="search" placeholder="Spritzen, Verbandmaterial, Hygiene oder HF-Pinzette …" autocomplete="off">
+              <span class="pzn-badge" id="searchHint">4 Beispiele</span>
+            </label>
+            <div class="product-grid" id="productGrid">
+              <article class="product-card" data-search="einmalspritzen luer lock spritzen kanülen 5 ml steril sprechstundenbedarf">
+                <div class="product-image"><img src="assets/img/product-syringes.webp" alt="Sterile Einmalspritzen und einzeln verpackte Kanülen" loading="lazy"></div>
+                <div class="product-body"><div class="product-kicker">Sprechstundenbedarf</div><h3>Einmalspritzen Luer-Lock · 5 ml</h3><div class="product-meta">Steril · Beispielartikel</div><div class="product-price">Zum Start <small>geplant</small></div><a class="add-button" href="#kontakt">Interesse vormerken</a></div>
+              </article>
+              <article class="product-card" data-search="verbandmaterial basis paket kompressen binden pflaster fixation verband schere">
+                <div class="product-image"><img src="assets/img/product-bandages.webp" alt="Kompressen, Fixierbinden, Pflaster und Verbandsschere" loading="lazy"></div>
+                <div class="product-body"><div class="product-kicker">Verbandmaterial</div><h3>Verbandmaterial Basis-Paket</h3><div class="product-meta">Kompressen, Binden &amp; Fixierung · Beispielpaket</div><div class="product-price">Zum Start <small>geplant</small></div><a class="add-button" href="#kontakt">Interesse vormerken</a></div>
+              </article>
+              <article class="product-card" data-search="händedesinfektion hygiene sterillium dosierpumpe 1 liter tücher">
+                <div class="product-image"><img src="assets/img/product-disinfectant.webp" alt="Händedesinfektion mit Dosierpumpe und Einmaltüchern" loading="lazy"></div>
+                <div class="product-body"><div class="product-kicker">Händehygiene</div><h3>Händedesinfektion + Dosierpumpe · 1 l</h3><div class="product-meta">Für Behandlungs- und Funktionsräume</div><div class="product-price">Zum Start <small>geplant</small></div><a class="add-button" href="#kontakt">Interesse vormerken</a></div>
+              </article>
+              <article class="product-card" data-search="bipolare hf pinzette hochfrequenz pinzetten instrument eingriff 18 cm">
+                <div class="product-image"><img src="assets/img/product-forceps.webp" alt="Bipolare HF-Pinzette mit Anschlusskabel auf einer Instrumentenschale" loading="lazy"></div>
+                <div class="product-body"><div class="product-kicker">HF-Instrumente</div><h3>Bipolare HF-Pinzette · 18 cm</h3><div class="product-meta">Wiederverwendbar · Beispielinstrument</div><div class="product-price">Zum Start <small>geplant</small></div><a class="add-button" href="#kontakt">Interesse vormerken</a></div>
+              </article>
+            </div>
+            <div class="empty-state" id="emptyState"><strong>Kein passender Artikel gefunden.</strong><br><span class="muted">Versuchen Sie einen Produktnamen, eine Kategorie oder eine Artikelnummer.</span></div>
+          </div>
+        </details>
       </div>
     </section>
   </main>
