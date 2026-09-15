@@ -80,7 +80,7 @@ if (revealEls.length && !prefersReducedMotion && 'IntersectionObserver' in windo
     el.classList.add('js-reveal');
     const parent = el.parentElement;
     const index = siblingCounts.get(parent) ?? 0;
-    el.style.transitionDelay = `${Math.min(index, 5) * 70}ms`;
+    el.style.transitionDelay = `${Math.min(index, 5) * 90}ms`;
     siblingCounts.set(parent, index + 1);
   });
 
